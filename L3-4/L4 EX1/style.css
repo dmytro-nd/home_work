@@ -1,0 +1,71 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+#wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.conteiner {
+    padding: 0 15px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.card-box {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0d5825;
+    overflow: hidden;
+}
+
+blockquote {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+q {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+img {
+    width: 150px;
+    position: absolute;
+    top: 30vh;
+}
+
+#card1 {
+    left: 35%;
+    transform: rotate(-25deg);
+}
+
+#card2 {
+    left: 41%;
+    transform: rotate(-10deg) translateY(5px);
+}
+
+#card3 {
+    left: 47%;
+    transform: rotate(5deg) translateY(20px);
+}

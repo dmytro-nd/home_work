@@ -1,0 +1,94 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+#wrapper {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.conteiner {
+    padding: 0 15px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes fade-away{
+    0%  { opacity: 100%; }
+    100% { opacity: 0; }
+  }
+
+.nav {
+    position: relative;
+    width: 250px;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);;
+    left: -220px;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.nav:hover {
+    transition: left 0.5s ease-in;
+    left: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.list, .nav-hint {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: bolder;
+    font-size: 24px;
+    color: white;
+}
+
+.list {
+    list-style-image: url(image/triangle-16.ico);
+}
+
+.item {
+    padding:0 0 15px 15px;
+}
+
+.link:hover {
+    color: #FFFFFF;
+    background: transparent;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+.nav-hint {
+    position: relative;
+    left: 111px;
+    top: 15vh;
+    transform: rotate(90deg);
+}
+
+.nav:hover .nav-hint {
+    animation: fade-away 0.3s ease-in forwards;
+}

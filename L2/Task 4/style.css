@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.bg-box {
+    background-image: url("image/grass-png-images-pictures-transparent-28.png"), url("image/58eb07b830eab15b56162788.png"), url("image/lamp-png-0.png"), url("image/Ёжик.png"), url("image/pole-zelen-trava-dom-derevya.jpg");
+    background-repeat: repeat-x, repeat-y, repeat-x, repeat-y, no-repeat;
+    background-position: bottom left, top right, top left, top left, center center;
+    background-size: contain;
+    background-color: green;
+}

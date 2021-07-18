@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+#wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.conteiner {
+    padding: 0 15px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.pink, .green, .purple {
+    position: absolute;
+}
+  
+.pink { 
+    top: 40px;
+    left: 40px;
+    z-index: 1;
+    background: #FBA2B2;
+    ;
+}
+  
+.green {
+    z-index: 1;
+    top: 240px;
+    left: 240px;
+    background: #62F8DD;
+}
+  
+.purple {
+    top: 140px;
+    left: 140px;
+    z-index: 2;
+    background: #BFA9FF;
+    font-size: 14px;
+}
+  
+div {
+    height: 150px;
+    width: 150px;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    padding: 5px;
+    box-sizing: border-box;
+}

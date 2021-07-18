@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+#wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.conteiner {
+    padding: 15px 15px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.square-box {
+    width: 100px;
+    height: 100px;
+    background-color: wheat;
+}
+
+@keyframes square {
+    0% { top: 0; left: 0; background-color: red;}
+    25% { transform: translate(0, 75px); background-color: blue;}
+    50% { transform: translate(75px, 75px); background-color: green;}
+    75% { transform: translate(75px, 0); background-color: yellow;}
+    100% { transform: translate(0, 0); background-color: red;}
+}
+
+.square {
+    width: 25px;
+    height: 25px;
+    animation: square 4s ease-in-out infinite;
+}
