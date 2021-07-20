@@ -192,6 +192,10 @@ a {
     padding-left: 30px;
 }
 
+.menu__item.btn {
+    display: none;
+}
+
 /* header end */
 
 .section-banner {
@@ -957,6 +961,10 @@ footer a {
         flex-direction: row;
     }
 
+    .login-list {
+        display: none;
+    }
+
     .nav {
         display: flex;
         position: relative;
@@ -1044,6 +1052,19 @@ footer a {
     #menu__toggle:checked ~ .nav-list {
         visibility: visible;
         left: 0;
+    }
+
+    .menu__item.btn {
+        display: block;
+    }
+
+    .menu__item.btn {
+        margin: 10px auto;
+        width: 150px;
+    }
+
+    #join-us {
+        background: #CFD8DC;
     }
 
     /* header end */
@@ -1283,4 +1304,8 @@ footer a {
     .conteiner {
         max-width: 575px;
     }
+
+    /* header start */
+
+    
 }
