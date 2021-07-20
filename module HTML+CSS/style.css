@@ -1179,7 +1179,7 @@ footer a {
     /* footer end */
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .conteiner {
         max-width: 767px;
         padding: 0 15px;
@@ -1187,7 +1187,100 @@ footer a {
 
     /*banner*/
 
-    .icon-scroll-down {
-        visibility: hidden;
+    .icon-scroll-down, .link-down {
+        display: none;
+    }
+
+    /* banner end */
+
+    /* our start */ 
+
+    .our-wrap {
+        flex-direction: column;
+    }
+
+    .our-description {
+        padding: 0 0 30px 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* our end */
+
+    /* afr start */
+
+    .appartment-tiles .app-tile {
+        margin: 0;
+    }
+
+    .appartment-tiles .app-tile + .app-tile {
+        margin-top: 30px;
+    }
+
+    .afr .banner-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .afr .banner-form .form-group {
+        padding: 0 0 30px 0;
+    }
+    
+    #afr-input {
+        min-width: 365px;
+    }
+
+    /* afr end */
+
+    /* hiw start */ 
+
+    .hiw-tiles-group .hiw-tile {
+        margin: 0;
+    }
+
+    .hiw-tiles-group .hiw-tile + .hiw-tile {
+        margin-top: 30px;
+    }
+
+    /* hiw end */
+
+    /*serv start */
+
+    .services:before {
+        right: 79%;
+    }
+
+    .shift-back-filler {
+        width: 15vh;
+    }
+
+    /* serv end */
+
+    /* moa start */
+
+    .agents-tile-group .agents-tile + .agents-tile {
+        margin-left: 0;
+        margin-top: 30px; 
+    }
+
+    /* moa end */
+
+    /* footer start */
+
+    .footer-links {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer-links , .footer-links div + div {
+        padding: 0;
+    } 
+
+    /* footer end */
+}
+
+@media (max-width: 575px) {
+    .conteiner {
+        max-width: 575px;
     }
 }
